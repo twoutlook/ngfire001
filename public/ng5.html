@@ -52,7 +52,7 @@
 			<th><a href="" ng-click="orderByField='act'; reverseSort = !reverseSort">狀態 </a></th> -->
 			 	<!-- <th>update</th>  -->
 
-			<tr ng-repeat="msg in messages track by msg.sno |  filter:query | orderBy:orderByField:reverseSort" >
+			<tr ng-repeat="msg in messages  |  filter:query | orderBy:orderByField:reverseSort" >
 				<!-- <td>{{ msg.sno }}</td> -->
 				<td>{{ msg.sarea }}</td>
 				<td>{{ msg.sna }}</td>
