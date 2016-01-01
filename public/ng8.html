@@ -30,10 +30,7 @@
 	<!-- <div class="row"> -->
 		<div class="col-md-2">
 			<!--Sidebar content-->
-    Filter:
-   <script >$scope.options = [{ name: "a", id: 1 }, { name: "b", id: 2 }];
-$scope.selectedOption = $scope.options[1];</script>
-<select data-ng-options="o.name for o in options" data-ng-model="selectedOption"></select>
+
 
 			
 
@@ -64,7 +61,7 @@ $scope.selectedOption = $scope.options[1];</script>
 
 			<tr ng-repeat="msg in messages |  filter:query | orderBy:orderByField:reverseSort" >
 				<!-- <td>{{ msg.sno }}</td> -->
-				<td>{{ $index }}</td>
+				<td>{{ 1+$index }}</td>
 				<td>{{ msg.sarea }}</td>
 				<td>{{ msg.sna }}</td>
 				<td>{{ msg.sbi }}</td>
