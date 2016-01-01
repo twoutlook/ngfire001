@@ -39,6 +39,9 @@ $scope.selectedOption = $scope.options[1];</script>
 
 		</div>
 		<table class="table table-bordered">
+				<tr>
+				<th colspan="5">Search: <input ng-model="query"></th>
+			</tr>
 		<!-- 	<th><a href="" ng-click="orderByField='sno'; reverseSort = !reverseSort">item</a></th> -->
 			<tr>
 			<th>item</th>
@@ -51,9 +54,7 @@ $scope.selectedOption = $scope.options[1];</script>
 			<th><a href="" ng-click="orderByField='sna'; reverseSort = !reverseSort">可借</a></th>
 			<th><a href="" ng-click="orderByField='bemp'; reverseSort = !reverseSort">可還</a></th>
 		</tr>
-		<tr>
-				<th colspan="5">Search: <input ng-model="query"></th>
-			</tr>
+
 
 
 
