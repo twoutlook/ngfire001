@@ -44,12 +44,33 @@ must be after angular
 
 			
 
-		</div>where is icon?
+		</div>xxxwhere is icon?
+
+		<div class="right-inner-addon ">
+			<style type="text/css">
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+			</style>
+    <i class="icon-search"></i>
+    <input type="search"
+           class="form-control" 
+           placeholder="Search" 
+           ng-model="query"/>
+</div>
 		<ng-md-icon icon="search" style="fill: #abcdef" size="32"></ng-md-icon>
 		<table class="table table-bordered">
-				<tr>
-				<th colspan="5"><ng-md-icon icon="search" style="fill: #abcdef" size="32"></ng-md-icon> xxxSearch: <input ng-model="query"></th>
-			</tr>
+		
 		<!-- 	<th><a href="" ng-click="orderByField='sno'; reverseSort = !reverseSort">item</a></th> -->
 			<tr>
 			<th>#</th>
