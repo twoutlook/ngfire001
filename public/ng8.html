@@ -31,8 +31,10 @@
 		<div class="col-md-2">
 			<!--Sidebar content-->
     Filter:
-    <select ng-model="filterItem.store" ng-options="msg.sarea for msg in filterOptions.stores">
-    </select>
+   <script >$scope.options = [{ name: "a", id: 1 }, { name: "b", id: 2 }];
+$scope.selectedOption = $scope.options[1];</script>
+<select data-ng-options="o.name for o in options" data-ng-model="selectedOption"></select>
+
 			Search: <input ng-model="query">
 
 		</div>
